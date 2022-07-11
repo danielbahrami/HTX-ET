@@ -18,33 +18,33 @@ void setup() {
 }
 
 void loop() {
-    
+
     buttonState1 = digitalRead(button1);
     buttonState2 = digitalRead(button2);
     buttonState3 = digitalRead(button3);
     buttonState4 = digitalRead(button4);
-    
+
     if (buttonState1 == HIGH) {
         delay(1000);
         digitalWrite(transistor, HIGH);
         delay(8);
         digitalWrite(transistor, LOW);
     }
-    
+
     if (buttonState2 == HIGH) {
         delay(1000);
         digitalWrite(transistor, HIGH);
         delay(10);
         digitalWrite(transistor, LOW);
     }
-    
+
     if (buttonState3 == HIGH) {
         delay(1000);
         digitalWrite(transistor, HIGH);
         delay(12);
         digitalWrite(transistor, LOW);
     }
-    
+
     if (buttonState4 == HIGH) {
         delay(1000);
         digitalWrite(transistor, HIGH);
